@@ -13,7 +13,7 @@ namespace ExtractionVente
 {
     public partial class ExtrationProduits : Form
     {
-        OracleConnection conn;
+        // OracleConnection conn;
 
         public ExtrationProduits()
         {
@@ -23,7 +23,7 @@ namespace ExtractionVente
         private void initTable ()
         {
             OracleCommand cmd = new OracleCommand();
-            cmd.Connection = conn;
+           //  cmd.Connection = conn;
             cmd.CommandText = "select ITEM_NO, DESCR from SSFRANCE.ITEM, SSFRANCE.ITEM_DESC WHERE SSFRANCE.ITEM.ITEM_NO=SSFRANCE.ITEM_DESC.REF_NO AND LANG_NO='F' ORDER BY ITEM_NO";
             cmd.CommandType = CommandType.Text;
 
@@ -39,6 +39,30 @@ namespace ExtractionVente
         private void calculMoyenne(string codeProduit)
         {
 
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            /*
+            var points = new List<PointD>()
+            {
+                new PointD{X=2012,Y=407},
+                new PointD{X=2013,Y=540},
+                new PointD{X=2014,Y=422}
+            };
+
+            var a = RegressionLineaire.Variance(points, p => p.X, p => p.Y) / RegressionLineaire.Variance(points, p => p.X, p => p.X);
+            var b = points.Average(p => p.Y) - a * points.Average(p => p.X);
+
+            Console.WriteLine(a);
+            Console.WriteLine(b);
+
+            int x = 2015;
+
+            double y = a * x + b;
+
+            Console.WriteLine("y = " + y);
+            */
         }
     }
 }

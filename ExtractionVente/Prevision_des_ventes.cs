@@ -213,8 +213,6 @@ namespace ExtractionVente
                 int year = datetime.Year;
                 decimal value = dr.GetDecimal(2);
 
-                // Console.WriteLine(dr.GetString(1) + " -> "+ "month : " + month + " ; " + "year : " + year + " ; value : " + value);
-
                 if(previusDate != year || previusDate == -1){
                     indiceAdd++;
                     dataGridView1.Rows.Add(13);
@@ -322,6 +320,25 @@ namespace ExtractionVente
         private void radioCommandeEtExperdiees_CheckedChanged(object sender, EventArgs e)
         {
             dataGridView1.Rows.Clear();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            ExtrationProduits myListeProduct = new ExtrationProduits();
+            myListeProduct.Show();
+        }
+
+        private void button3_Click_1(object sender, EventArgs e)
+        {
+            
+            var points = new List<RegressionLineaire.PointD>()
+            {
+                new RegressionLineaire.PointD{X=12,Y=512},
+                new RegressionLineaire.PointD{X=13,Y=493},
+                new RegressionLineaire.PointD{X=14,Y=441}
+            };
+
+            Console.WriteLine("y = {0}", RegressionLineaire.regression(points,15));
         }
     }
 }

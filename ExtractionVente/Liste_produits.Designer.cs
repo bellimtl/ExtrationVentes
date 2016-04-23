@@ -35,7 +35,7 @@
             // 
             // boutonSelectProduit
             // 
-            this.boutonSelectProduit.Location = new System.Drawing.Point(975, 317);
+            this.boutonSelectProduit.Location = new System.Drawing.Point(975, 498);
             this.boutonSelectProduit.Name = "boutonSelectProduit";
             this.boutonSelectProduit.Size = new System.Drawing.Size(90, 23);
             this.boutonSelectProduit.TabIndex = 0;
@@ -55,14 +55,14 @@
             this.dataGridView1.MultiSelect = false;
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.Size = new System.Drawing.Size(1053, 299);
+            this.dataGridView1.Size = new System.Drawing.Size(1053, 480);
             this.dataGridView1.TabIndex = 1;
             // 
             // Liste_produits
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1077, 352);
+            this.ClientSize = new System.Drawing.Size(1077, 533);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.boutonSelectProduit);
             this.Name = "Liste_produits";

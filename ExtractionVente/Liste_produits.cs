@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Oracle.DataAccess.Client;
 using Oracle.DataAccess.Types;
+using static ExtractionVente.RegressionLineaire;
 
 namespace ExtractionVente
 {
@@ -60,5 +61,11 @@ namespace ExtractionVente
         {
 
         }
+
+        private void btn_test_Click(object sender, EventArgs e)
+        {
+           
+        }
+
     }
 }
